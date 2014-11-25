@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-us">
+ 
+<head>
+<meta charset="UTF-8">
+<title>dio</title>
+
+<link type="text/css"  href="css/csshake.min.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+<!-- Begin
+var message = new Array();
+// Set your messages below -- follow the pattern.
+// To add more messages, just add more elements to the array.
+message[0] = "Jump";
+message[1] = "Jump Jump";
+message[2] = "Jump Jump Jump";
+message[3] = "Jump Jump Jump Jump";
+message[4] = "Jump Jump Jump Jump Jump";
+message[5] = "JJump";
+message[6] = "JJJump";
+message[7] = "JJJJump";
+
+
+// Set the number of repetitions (how many times the arrow
+// cycle repeats with each message).
+var reps = 2;
+var speed = 30;  // Set the overall speed (larger number = slower action).
+
+// DO NOT EDIT BELOW THIS LINE.
+var p = message.length;
+var T = "";
+var C = 0;
+var mC = 0;
+var s = 0;
+var sT = null;
+if (reps < 1) reps = 1;
+function doTheThing() {
+T = message[mC];
+A();
+}
+function A() {
+s++;
+if (s > 8) { s = 1;}
+// you can fiddle with the patterns here...
+if (s == 1) { document.title = ''+T+''; }
+if (s == 2) { document.title = ''+T+''; }
+
+if (C < (8 * reps)) {
+sT = setTimeout("A()", speed);
+C++;
+}
+else {
+C = 0;
+s = 0;
+mC++;
+if(mC > p - 1) mC = 0;
+sT = null;
+doTheThing();
+   }
+}
+doTheThing();
+//  End -->
+</script>
+
+
+
+<script src="prefixfree.min.js"></script>
+ 
+<style>
+
+
+#mainContent {
+    background-color: #FFFF77;
+    border-radius: 4px;
+    padding: 10px;
+    width: 1000px;
+    height: 1000px;
+	
+
+    
+}
+.cloud {
+	position: center;
+	left: 0px;
+	top: 0px;
+	width: 170px;
+	height: 78px;
+}
+#bigcloud {
+    animation: bobble 3.8s infinite;
+    margin-left: 300px;
+    margin-top: 300px;
+}
+#smallcloud {
+    animation: bobble 4s infinite;
+    margin-top: 200px;
+    margin-left: 240px;
+}
+#scloud {
+    animation: bobble 3s infinite;
+    margin-top: 175px;
+    margin-left: 40px;
+}
+
+#acloud {
+    animation: bobble 6s infinite;
+    margin-top: 275px;
+    margin-left: 130px;
+}
+#lcloud {
+    animation: bobble 7s infinite;
+    margin-top: 195px;
+    margin-left: 275px;
+}
+#bcloud {
+    animation: bobble 2s infinite;
+    margin-top: 215px;
+    margin-left: 500px;
+}
+#ccloud {
+    animation: bobble 3.5s infinite;
+    margin-top: 235px;
+    margin-left: 10px;
+}
+
+@keyframes bobble {
+    0% {
+        transform: translate3d(50px, -200px, 0px);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: translate3d(20px, 600px, 0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translate3d(50px, -200px, 0px);
+    }
+}
+
+
+
+body,td,th {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 100px;
+	color: #FFF;
+}
+
+body {
+	background-color: #FFFF77;
+}
+</style>
+
+</head>
+ 
+<body>
+
+<script type="text/javascript">
+function AlertIt() {
+	//
+	var myrandom = Math.round(Math.random()*2)
+	//
+	var messages = new Array()
+	messages[0] = "我叫Dio"
+	messages[1] = "我能夠伸縮自如"
+	messages[2] = "現在，我要跳得比誰都高"
+	//
+	var links = new Array()
+	links[0] = "https://scontent-b.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10485300_10202720430265177_8271976141030184936_n.jpg?oh=6b81455fc2c7a1c74ee298e6df7c885f&oe=551167BF"
+	links[1] = "https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/10374508_10202652607209643_4797808079795050745_n.jpg?oh=feeee587edfb29bd7925aa0ddaae7666&oe=5513A1B8&__gda__=1427478190_5f129bc74f088a2c799ec7ae0a9b972d"
+	links[2] = "https://scontent-b.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/10730936_10202643523542557_2472780404584220933_n.jpg?oh=d45a09cb0bdd1ec7acbcad8266c421bc&oe=54E73C18"
+	links[3] = "https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/1622134_10202552113417361_4173566716034867879_n.jpg?oh=f4416150a300d597a4714de99100f025&oe=54D5E75A&__gda__=1423429168_b374966a5a399bda1305b6a4a856eef9"
+	//
+	var answer = confirm(messages[myrandom])
+	//
+	if (answer){
+		window.location = links[myrandom]
+	} else {
+		window.location = links[3]
+	}
+	
+	// else if(!answer)
+}
+</script>
+
+
+<div id="mainContent"><strong><img  src="images/dio.png" class="cloud" id="smallcloud"></strong></div>
+<img  src="images/dio2.png" alt="#" width="196" height="70" class="cloud" id="bigcloud" >
+<img  src="images/dio2.png" alt="#" width="324" height="139" class="cloud" id="scloud" >
+
+<img  src="images/dio2.png" alt="#" width="324" height="139" class="cloud" id="acloud" >
+<div id="mainContent">
+  <div align="center"><strong><img  src="images/dio.png" class="cloud" id="lcloud"></strong></div>
+</div>
+<img  src="images/dio2.png" alt="#" width="324" height="139" class="cloud" id="bcloud" >
+<div id="mainContent"><strong><img  src="images/dio.png" class="cloud" id="ccloud"></strong></div>
+
+<div class="shake shake-slow">
+  <div align="center"><a href="javascript:AlertIt();"><img src="images/di00.png" width="1000" height="auto" /></a></div>
+</div>
+</body>
+ 
+</html>
