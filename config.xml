@@ -6,7 +6,7 @@
         id        = "com.phonegap.MyNtutNewApp_dio"
         version   = "1.0.0">
 
-    <name>dio</name>
+    <name>down</name>
 
     <description>
         Hello World sample application that responds to the deviceready event.
