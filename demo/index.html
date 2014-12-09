@@ -13,6 +13,10 @@
     
 	<script src="../js/gyro.js"></script>
 	<script>
+	
+		document.getElementById('aaa').style.left = screen.width / 2 + "px";
+		document.getElementById('aaa').style.top = screen.height / 2 + "px";
+		
 		gyro.startTracking(function(o) {
 			var b = document.getElementById('example'),
 					f = document.getElementById('features');
@@ -27,6 +31,7 @@
 										"<p> beta = " + o.beta + "</p>" +
 										"<p> gamma = " + o.gamma + "</p>";
 										a.style.left = a.offsetLeft + o.x + "px";
+										a.style.top = a.offsetTop + o.y + "px";
 		});
 	</script>
 </body>
